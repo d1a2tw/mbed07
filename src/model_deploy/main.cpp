@@ -181,11 +181,9 @@ int main(int argc, char* argv[]) {
   micro_op_resolver.AddBuiltin(tflite::BuiltinOperator_SOFTMAX,
 
                                tflite::ops::micro::Register_SOFTMAX());
-  
+                               
   micro_op_resolver.AddBuiltin(tflite::BuiltinOperator_RESHAPE,
                              tflite::ops::micro::Register_RESHAPE(), 1);
-
- 
 
 
   // Build an interpreter to run the model with
@@ -295,5 +293,3 @@ int main(int argc, char* argv[]) {
   }
 
 }
-
-
